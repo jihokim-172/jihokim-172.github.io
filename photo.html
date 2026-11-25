@@ -24,85 +24,86 @@
     <h1>Photo</h1>
     <p class="lead">Moments outside of work.</p>
 
-    <!--
-      사진 추가 방법: photos/연도/ 폴더에 이미지를 넣고 해당 연도 gallery 안에 (새 연도는 h2 + gallery 를 위에 추가) figure 블록을 추가한다.
+'    <!--
+      사진 추가 방법
+      1) photos/연도/ (음식은 photos/food/) 폴더에 이미지를 넣는다.
+      2) 해당 연도 section 의 gallery 안에 figure 블록을 추가한다. data-kind 는 "moment" 또는 "food".
+      3) 새 연도는 #year-tabs 에 버튼을 하나 추가하고, section id="y연도" 를 위에 새로 만든다.
 
-      <figure>
-        <img src="photos/파일이름.jpg" alt="설명" loading="lazy">
+      <figure data-kind="moment">
+        <a href="photos/2017/파일이름.jpg" target="_blank" rel="noopener"><img src="photos/2017/파일이름.jpg" alt="설명" loading="lazy"></a>
         <figcaption>캡션</figcaption>
       </figure>
     -->
-    <div class="filters" id="photo-tabs">
-      <button class="chip" type="button" data-tab="tab-2016" aria-pressed="true">2016</button>
-      <button class="chip" type="button" data-tab="tab-food" aria-pressed="false">Food</button>
+    <div class="filters" id="year-tabs">
+      <button class="chip" type="button" data-year="y2016" aria-pressed="true">2016</button>
+    </div>
+    <div class="filters" id="kind-tabs" style="margin-top:10px">
+      <button class="chip" type="button" data-kind="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-kind="moment" aria-pressed="false">Moments</button>
+      <button class="chip" type="button" data-kind="food" aria-pressed="false">Food</button>
     </div>
 
-    <section id="tab-2016">
+    <section id="y2016" class="year">
     <h2>2016 <span class="sub">— ISCA 2016, Seoul</span></h2>
     <div class="gallery">
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-01.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-01.jpg" alt="ISCA 2016 — Between sessions" loading="lazy"></a>
         <figcaption>Between sessions</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-02.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-02.jpg" alt="ISCA 2016 — Hallway conversations" loading="lazy"></a>
         <figcaption>Hallway conversations</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-03.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-03.jpg" alt="ISCA 2016 — After a session" loading="lazy"></a>
         <figcaption>After a session</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-04.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-04.jpg" alt="ISCA 2016 — Coffee break" loading="lazy"></a>
         <figcaption>Coffee break</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-05.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-05.jpg" alt="ISCA 2016 — Main hall" loading="lazy"></a>
         <figcaption>Main hall</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-06.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-06.jpg" alt="ISCA 2016 — Main hall" loading="lazy"></a>
         <figcaption>Main hall</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-07.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-07.jpg" alt="ISCA 2016 — Sponsors board" loading="lazy"></a>
         <figcaption>Sponsors board</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-09.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-09.jpg" alt="ISCA 2016 — Dinner with fellow attendees" loading="lazy"></a>
         <figcaption>Dinner with fellow attendees</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="moment">
         <a href="photos/2016/isca2016-10.jpg" target="_blank" rel="noopener"><img src="photos/2016/isca2016-10.jpg" alt="ISCA 2016 — Closing — see you at ISCA 2017 in Toronto" loading="lazy"></a>
         <figcaption>Closing — see you at ISCA 2017 in Toronto</figcaption>
       </figure>
-    </div>
-    </section>
-
-    <section id="tab-food">
-    <h2>Food</h2>
-    <div class="gallery">
-      <figure>
+      <figure data-kind="food">
         <a href="photos/food/food-01.jpg" target="_blank" rel="noopener"><img src="photos/food/food-01.jpg" alt="Cold buckwheat noodles" loading="lazy"></a>
         <figcaption>Cold buckwheat noodles</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="food">
         <a href="photos/food/food-02.jpg" target="_blank" rel="noopener"><img src="photos/food/food-02.jpg" alt="Tofu with tomatoes, and two salads" loading="lazy"></a>
         <figcaption>Tofu with tomatoes, and two salads</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="food">
         <a href="photos/food/food-03.jpg" target="_blank" rel="noopener"><img src="photos/food/food-03.jpg" alt="Course tray" loading="lazy"></a>
         <figcaption>Course tray</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="food">
         <a href="photos/food/food-04.jpg" target="_blank" rel="noopener"><img src="photos/food/food-04.jpg" alt="Lotus leaf rice with side dishes" loading="lazy"></a>
         <figcaption>Lotus leaf rice with side dishes</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="food">
         <a href="photos/food/food-05.jpg" target="_blank" rel="noopener"><img src="photos/food/food-05.jpg" alt="Dessert" loading="lazy"></a>
         <figcaption>Dessert</figcaption>
       </figure>
-      <figure>
+      <figure data-kind="food">
         <a href="photos/food/food-06.jpg" target="_blank" rel="noopener"><img src="photos/food/food-06.jpg" alt="Banquet starter" loading="lazy"></a>
         <figcaption>Banquet starter</figcaption>
       </figure>
@@ -111,16 +112,25 @@
 
     <script>
       (function () {
-        var tabs = document.querySelectorAll('#photo-tabs .chip');
-        function show(id) {
-          tabs.forEach(function (b) {
-            var on = b.dataset.tab === id;
+        var years = document.querySelectorAll('#year-tabs .chip');
+        var kinds = document.querySelectorAll('#kind-tabs .chip');
+        var year = years[0].dataset.year, kind = 'all';
+        function render() {
+          years.forEach(function (b) {
+            var on = b.dataset.year === year;
             b.setAttribute('aria-pressed', on ? 'true' : 'false');
-            document.getElementById(b.dataset.tab).hidden = !on;
+            document.getElementById(b.dataset.year).hidden = !on;
+          });
+          kinds.forEach(function (b) {
+            b.setAttribute('aria-pressed', b.dataset.kind === kind ? 'true' : 'false');
+          });
+          document.querySelectorAll('.year figure').forEach(function (f) {
+            f.hidden = !(kind === 'all' || f.dataset.kind === kind);
           });
         }
-        tabs.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.tab); }); });
-        show(location.hash === '#food' ? 'tab-food' : 'tab-2016');
+        years.forEach(function (b) { b.addEventListener('click', function () { year = b.dataset.year; render(); }); });
+        kinds.forEach(function (b) { b.addEventListener('click', function () { kind = b.dataset.kind; render(); }); });
+        render();
       })();
     </script>
   </main>
