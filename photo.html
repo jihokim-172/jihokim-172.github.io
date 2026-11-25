@@ -28,22 +28,80 @@
       사진 추가 방법
       1) photos/연도/ (음식은 photos/food/) 폴더에 이미지를 넣는다.
       2) 해당 연도 section 의 gallery 안에 figure 블록을 추가한다. data-kind 는 "moment" 또는 "food".
-      3) 새 연도는 #year-tabs 에 버튼을 하나 추가하고, section id="y연도" 를 위에 새로 만든다.
+      3) 새 연도는 section id="y연도" class="year" 를 맨 위에 새로 만든다 (최신 연도가 위).
 
       <figure data-kind="moment">
         <a href="photos/2017/파일이름.jpg" target="_blank" rel="noopener"><img src="photos/2017/파일이름.jpg" alt="설명" loading="lazy"></a>
         <figcaption>캡션</figcaption>
       </figure>
     -->
-    <div class="filters" id="year-tabs">
-      <button class="chip" type="button" data-year="y2016" aria-pressed="true">2016</button>
-      <button class="chip" type="button" data-year="y2017" aria-pressed="false">2017</button>
-    </div>
-    <div class="filters" id="kind-tabs" style="margin-top:10px">
+    <div class="filters" id="kind-tabs">
       <button class="chip" type="button" data-kind="all" aria-pressed="true">All</button>
       <button class="chip" type="button" data-kind="moment" aria-pressed="false">Moments</button>
       <button class="chip" type="button" data-kind="food" aria-pressed="false">Food</button>
     </div>
+
+    <section id="y2017" class="year">
+    <h2>2017 <span class="sub">— ISCA 2017, Toronto</span></h2>
+    <div class="gallery">
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-01.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-01.jpg" alt="ISCA 2017 — Where I stayed" loading="lazy"></a>
+        <figcaption>Where I stayed</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-02.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-02.jpg" alt="ISCA 2017 — Where I stayed" loading="lazy"></a>
+        <figcaption>Where I stayed</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-03.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-03.jpg" alt="ISCA 2017 — Where I stayed" loading="lazy"></a>
+        <figcaption>Where I stayed</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-04.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-04.jpg" alt="ISCA 2017 — CN Tower sign at dusk" loading="lazy"></a>
+        <figcaption>CN Tower sign at dusk</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-05.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-05.jpg" alt="ISCA 2017 — ISCA 2017 signage" loading="lazy"></a>
+        <figcaption>ISCA 2017 signage</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-06.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-06.jpg" alt="ISCA 2017 — Workshop session" loading="lazy"></a>
+        <figcaption>Workshop session</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-07.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-07.jpg" alt="ISCA 2017 — Spadina Avenue" loading="lazy"></a>
+        <figcaption>Spadina Avenue</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-08.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-08.jpg" alt="ISCA 2017 — Coffee stop" loading="lazy"></a>
+        <figcaption>Coffee stop</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-09.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-09.jpg" alt="ISCA 2017 — Financial District" loading="lazy"></a>
+        <figcaption>Financial District</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-10.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-10.jpg" alt="ISCA 2017 — Yonge–Dundas Square" loading="lazy"></a>
+        <figcaption>Yonge–Dundas Square</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-11.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-11.jpg" alt="ISCA 2017 — Yonge Street" loading="lazy"></a>
+        <figcaption>Yonge Street</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-12.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-12.jpg" alt="ISCA 2017 — Main session" loading="lazy"></a>
+        <figcaption>Main session</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-13.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-13.jpg" alt="ISCA 2017 — Main session" loading="lazy"></a>
+        <figcaption>Main session</figcaption>
+      </figure>
+      <figure data-kind="moment">
+        <a href="photos/2017/isca2017-14.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-14.jpg" alt="ISCA 2017 — Talk on the TPU" loading="lazy"></a>
+        <figcaption>Talk on the TPU</figcaption>
+      </figure>
+    </div>
+    </section>
 
     <section id="y2016" class="year">
     <h2>2016 <span class="sub">— ISCA 2016, Seoul</span></h2>
@@ -111,89 +169,25 @@
     </div>
     </section>
 
-    <section id="y2017" class="year">
-    <h2>2017 <span class="sub">— ISCA 2017, Toronto</span></h2>
-    <div class="gallery">
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-01.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-01.jpg" alt="ISCA 2017 — Where I stayed" loading="lazy"></a>
-        <figcaption>Where I stayed</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-02.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-02.jpg" alt="ISCA 2017 — Where I stayed" loading="lazy"></a>
-        <figcaption>Where I stayed</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-03.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-03.jpg" alt="ISCA 2017 — Where I stayed" loading="lazy"></a>
-        <figcaption>Where I stayed</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-04.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-04.jpg" alt="ISCA 2017 — CN Tower sign at dusk" loading="lazy"></a>
-        <figcaption>CN Tower sign at dusk</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-05.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-05.jpg" alt="ISCA 2017 — ISCA 2017 signage" loading="lazy"></a>
-        <figcaption>ISCA 2017 signage</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-06.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-06.jpg" alt="ISCA 2017 — Workshop session" loading="lazy"></a>
-        <figcaption>Workshop session</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-07.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-07.jpg" alt="ISCA 2017 — Spadina Avenue" loading="lazy"></a>
-        <figcaption>Spadina Avenue</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-08.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-08.jpg" alt="ISCA 2017 — Coffee stop" loading="lazy"></a>
-        <figcaption>Coffee stop</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-09.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-09.jpg" alt="ISCA 2017 — Financial District" loading="lazy"></a>
-        <figcaption>Financial District</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-10.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-10.jpg" alt="ISCA 2017 — Yonge–Dundas Square" loading="lazy"></a>
-        <figcaption>Yonge–Dundas Square</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-11.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-11.jpg" alt="ISCA 2017 — Yonge Street" loading="lazy"></a>
-        <figcaption>Yonge Street</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-12.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-12.jpg" alt="ISCA 2017 — Main session" loading="lazy"></a>
-        <figcaption>Main session</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-13.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-13.jpg" alt="ISCA 2017 — Main session" loading="lazy"></a>
-        <figcaption>Main session</figcaption>
-      </figure>
-      <figure data-kind="moment">
-        <a href="photos/2017/isca2017-14.jpg" target="_blank" rel="noopener"><img src="photos/2017/isca2017-14.jpg" alt="ISCA 2017 — Talk on the TPU" loading="lazy"></a>
-        <figcaption>Talk on the TPU</figcaption>
-      </figure>
-    </div>
-    </section>
-
     <script>
       (function () {
-        var years = document.querySelectorAll('#year-tabs .chip');
         var kinds = document.querySelectorAll('#kind-tabs .chip');
-        var year = years[0].dataset.year, kind = 'all';
-        function render() {
-          years.forEach(function (b) {
-            var on = b.dataset.year === year;
-            b.setAttribute('aria-pressed', on ? 'true' : 'false');
-            document.getElementById(b.dataset.year).hidden = !on;
-          });
+        function render(kind) {
           kinds.forEach(function (b) {
             b.setAttribute('aria-pressed', b.dataset.kind === kind ? 'true' : 'false');
           });
-          document.querySelectorAll('.year figure').forEach(function (f) {
-            f.hidden = !(kind === 'all' || f.dataset.kind === kind);
+          document.querySelectorAll('.year').forEach(function (sec) {
+            var shown = 0;
+            sec.querySelectorAll('figure').forEach(function (f) {
+              var on = kind === 'all' || f.dataset.kind === kind;
+              f.hidden = !on;
+              if (on) shown++;
+            });
+            sec.hidden = shown === 0;
           });
         }
-        years.forEach(function (b) { b.addEventListener('click', function () { year = b.dataset.year; render(); }); });
-        kinds.forEach(function (b) { b.addEventListener('click', function () { kind = b.dataset.kind; render(); }); });
-        render();
+        kinds.forEach(function (b) { b.addEventListener('click', function () { render(b.dataset.kind); }); });
+        render('all');
       })();
     </script>
   </main>
