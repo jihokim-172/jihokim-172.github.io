@@ -217,6 +217,8 @@ p { margin: 0 0 14px; }
   margin-top: 24px;
 }
 
+.year h2 { font-size: 1.5rem; color: var(--text); letter-spacing: 0; font-weight: 700; }
+.year h2 .sub { font-size: 0.95rem; color: var(--muted); }
 .gallery a { cursor: zoom-in; display: block; }
 .lightbox[hidden] { display: none; }
 .lightbox {
