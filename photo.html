@@ -16,7 +16,6 @@
         <a href="research.html">Research</a>
         <a href="architecture.html">Computer Architecture</a>
         <a href="photo.html" aria-current="page">Photo</a>
-        <a href="food.html">Food</a>
       </nav>
     </div>
   </header>
@@ -33,6 +32,12 @@
         <figcaption>캡션</figcaption>
       </figure>
     -->
+    <div class="filters" id="photo-tabs">
+      <button class="chip" type="button" data-tab="tab-2016" aria-pressed="true">2016</button>
+      <button class="chip" type="button" data-tab="tab-food" aria-pressed="false">Food</button>
+    </div>
+
+    <section id="tab-2016">
     <h2>2016 <span class="sub">— ISCA 2016, Seoul</span></h2>
     <div class="gallery">
       <figure>
@@ -76,6 +81,52 @@
         <figcaption>Closing — see you at ISCA 2017 in Toronto</figcaption>
       </figure>
     </div>
+    </section>
+
+    <section id="tab-food">
+    <h2>Food</h2>
+    <div class="gallery">
+      <figure>
+        <a href="photos/food/food-01.jpg" target="_blank" rel="noopener"><img src="photos/food/food-01.jpg" alt="Cold buckwheat noodles" loading="lazy"></a>
+        <figcaption>Cold buckwheat noodles</figcaption>
+      </figure>
+      <figure>
+        <a href="photos/food/food-02.jpg" target="_blank" rel="noopener"><img src="photos/food/food-02.jpg" alt="Tofu with tomatoes, and two salads" loading="lazy"></a>
+        <figcaption>Tofu with tomatoes, and two salads</figcaption>
+      </figure>
+      <figure>
+        <a href="photos/food/food-03.jpg" target="_blank" rel="noopener"><img src="photos/food/food-03.jpg" alt="Course tray" loading="lazy"></a>
+        <figcaption>Course tray</figcaption>
+      </figure>
+      <figure>
+        <a href="photos/food/food-04.jpg" target="_blank" rel="noopener"><img src="photos/food/food-04.jpg" alt="Lotus leaf rice with side dishes" loading="lazy"></a>
+        <figcaption>Lotus leaf rice with side dishes</figcaption>
+      </figure>
+      <figure>
+        <a href="photos/food/food-05.jpg" target="_blank" rel="noopener"><img src="photos/food/food-05.jpg" alt="Dessert" loading="lazy"></a>
+        <figcaption>Dessert</figcaption>
+      </figure>
+      <figure>
+        <a href="photos/food/food-06.jpg" target="_blank" rel="noopener"><img src="photos/food/food-06.jpg" alt="Banquet starter" loading="lazy"></a>
+        <figcaption>Banquet starter</figcaption>
+      </figure>
+    </div>
+    </section>
+
+    <script>
+      (function () {
+        var tabs = document.querySelectorAll('#photo-tabs .chip');
+        function show(id) {
+          tabs.forEach(function (b) {
+            var on = b.dataset.tab === id;
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+            document.getElementById(b.dataset.tab).hidden = !on;
+          });
+        }
+        tabs.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.tab); }); });
+        show(location.hash === '#food' ? 'tab-food' : 'tab-2016');
+      })();
+    </script>
   </main>
 
   <footer>© Jiho Kim. All rights reserved.</footer>
