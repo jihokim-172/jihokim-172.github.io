@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2026-11-27",
+    "topic": "Memory",
+    "title": "DIGITIMES: growth in KV cache will not turn one-for-one into CXL memory demand",
+    "url": "https://digitimes.com/news/a20261126PD215/cxl-memory-dram-data-demand-growth.html",
+    "source": "DIGITIMES"
+  },
+  {
+    "date": "2026-11-26",
+    "topic": "Storage",
+    "title": "Kioxia announces GP2 SSD for GPU memory expansion, with over 18 million random-read IOPS",
+    "url": "https://www.kioxia.com/en-jp/business/news/2026/20261126-2.html",
+    "source": "Kioxia"
+  },
+  {
+    "date": "2026-11-24",
+    "topic": "Interconnect",
+    "title": "Applied Optoelectronics secures $2.2B in hyperscaler commitments for 800G transceivers and CPO lasers",
+    "url": "https://convergedigest.com/aoi-2-2-billion-hyperscaler-800g-cpo-lasers/",
+    "source": "Converge Digest"
+  },
+  {
+    "date": "2026-11-24",
+    "topic": "Supercomputer",
+    "title": "SC26 panel debates whether AI supercomputing is an evolution or a revolution",
+    "url": "https://www.hpcwire.com/aiwire/2026/11/24/sc26-panel-debates-ai-supercomputing-evolution-or-revolution/",
+    "source": "HPCwire"
+  }
+]
