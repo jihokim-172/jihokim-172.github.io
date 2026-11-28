@@ -287,6 +287,9 @@ p { margin: 0 0 14px; }
 }
 .spec tr.group:first-child th { padding-top: 2px; }
 .spec sup { color: var(--muted); line-height: 0; }
+.spec.cmp th { width: 24%; }
+.spec.cmp td { width: 38%; }
+.spec.cmp thead th { color: var(--text); font-weight: 700; font-size: 0.95rem; padding: 6px 10px; border-bottom: 2px solid var(--text); }
 
 /* ---------- footer ---------- */
 footer {
@@ -310,5 +313,8 @@ footer {
   .panels.trio { grid-template-columns: 1fr; }
   .spec th, .spec td { padding: 4px 6px; }
   .spec th { width: 38%; }
+  .spec.cmp { font-size: 0.82rem; }
+  .spec.cmp th { width: 26%; }
+  .spec.cmp td { width: 37%; }
   nav { gap: 16px; flex-wrap: wrap; }
 }

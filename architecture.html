@@ -38,48 +38,47 @@
     -->
     <article class="post" data-tags="supercomputer">
       <header>
-        <h2 class="post-title">LineShine, No. 1 on the TOP500</h2>
+        <h2 class="post-title">LineShine and HANGANG: the TOP500 No. 1 and Korea’s No. 1</h2>
         <p class="post-meta">Nov. 28, 2026 · <span class="tag">Supercomputer</span></p>
       </header>
 
-      <p>LineShine has led the TOP500 since June 2026 and kept the top spot on the November 2026 list announced at SC26. It is the first system to pass 2 EFlop/s on HPL, and it does so with CPUs only.</p>
+      <p>LineShine has led the TOP500 since June 2026 and kept the top spot on the November 2026 list announced at SC26. Korea’s fastest system on the same list is HANGANG at KISTI, which entered at No. 12. LineShine delivers 6.4 times the HPL performance of HANGANG and draws 7.3 times the power.<sup>†</sup> LineShine is CPU-only, while HANGANG is GPU-accelerated.</p>
 
-      <table class="spec">
+      <table class="spec cmp">
+        <thead>
+          <tr><th></th><th>LineShine</th><th>HANGANG</th></tr>
+        </thead>
         <tbody>
-          <tr class="group"><th colspan="2">System</th></tr>
-          <tr><th>Name</th><td>LineShine (灵晟)</td></tr>
-          <tr><th>Site</th><td>National Supercomputing Centre in Shenzhen (NSCS), China</td></tr>
-          <tr><th>Manufacturer</th><td>Shenzhen Cloud Computing Center</td></tr>
-          <tr><th>Installation year</th><td>2025</td></tr>
-          <tr><th>TOP500 rank</th><td>No. 1 (June 2026, November 2026)</td></tr>
+          <tr class="group"><th colspan="3">System</th></tr>
+          <tr><th>TOP500 rank</th><td><b>No. 1</b></td><td><b>No. 12</b> (No. 1 in Korea)</td></tr>
+          <tr><th>Site</th><td>National Supercomputing Centre in Shenzhen, China</td><td>KISTI Supercomputing Center, South Korea</td></tr>
+          <tr><th>Manufacturer</th><td>Shenzhen Cloud Computing Center</td><td>HPE (Cray EX254n)</td></tr>
+          <tr><th>Installation year</th><td>2025</td><td>2026</td></tr>
 
-          <tr class="group"><th colspan="2">Performance</th></tr>
-          <tr><th>HPL (Rmax)</th><td><b>2,198.40 PFlop/s</b></td></tr>
-          <tr><th>Theoretical peak (Rpeak)</th><td>2,735.82 PFlop/s</td></tr>
-          <tr><th>Rmax / Rpeak</th><td>80.4%<sup>†</sup></td></tr>
-          <tr><th>HPCG</th><td>22.00 PFlop/s (No. 1 on HPCG)</td></tr>
-          <tr><th>Power</th><td>42,220 kW</td></tr>
-          <tr><th>Energy efficiency</th><td>52.07 GFlops/W<sup>†</sup></td></tr>
+          <tr class="group"><th colspan="3">Performance</th></tr>
+          <tr><th>HPL (Rmax)</th><td><b>2,198.40 PFlop/s</b></td><td><b>342.60 PFlop/s</b></td></tr>
+          <tr><th>Theoretical peak (Rpeak)</th><td>2,735.82 PFlop/s</td><td>588.28 PFlop/s</td></tr>
+          <tr><th>Rmax / Rpeak<sup>†</sup></th><td>80.4%</td><td>58.2%</td></tr>
+          <tr><th>HPCG</th><td>22.00 PFlop/s</td><td>4.29 PFlop/s</td></tr>
+          <tr><th>Power</th><td>42,220 kW</td><td>5,789 kW</td></tr>
+          <tr><th>Energy efficiency<sup>†</sup></th><td>52.07 GFlops/W</td><td>59.18 GFlops/W</td></tr>
 
-          <tr class="group"><th colspan="2">Compute</th></tr>
-          <tr><th>Processor</th><td>LX2, 304 cores, 1.55 GHz; chiplet-based, with an SVE vector engine and an SME matrix engine per core</td></tr>
-          <tr><th>Accelerator</th><td>None (CPU-only)</td></tr>
-          <tr><th>Total cores</th><td>13,789,440</td></tr>
-          <tr><th>CPUs</th><td>45,360<sup>†</sup></td></tr>
-          <tr><th>Compute nodes</th><td>22,680 (2 CPUs per node)</td></tr>
-          <tr><th>Memory per node</th><td>64 GB HBM + 512 GB DDR5</td></tr>
-          <tr><th>Cabinets</th><td>About 90 compute cabinets</td></tr>
+          <tr class="group"><th colspan="3">Compute</th></tr>
+          <tr><th>Processor</th><td>LX2, 304 cores, 1.55 GHz</td><td>NVIDIA Grace, 72 cores, 3.1 GHz</td></tr>
+          <tr><th>Accelerator</th><td>None (CPU-only)</td><td>NVIDIA GH200 Superchip; 8,496 GPUs</td></tr>
+          <tr><th>Total cores</th><td>13,789,440</td><td>1,700,544</td></tr>
+          <tr><th>Compute nodes</th><td>22,680 (2 CPUs per node)</td><td>Not listed</td></tr>
+          <tr><th>Memory per node</th><td>64 GB HBM + 512 GB DDR5</td><td>Not listed</td></tr>
 
-          <tr class="group"><th colspan="2">Network and software</th></tr>
-          <tr><th>Interconnect</th><td>LingQi; dual-plane, four-rail fat tree; 8 network interfaces per node</td></tr>
-          <tr><th>Operating system</th><td>Kylin OS</td></tr>
-          <tr><th>Compiler</th><td>Lclang 1.0.0</td></tr>
-          <tr><th>MPI</th><td>OpenMPI, customized for LingQi</td></tr>
+          <tr class="group"><th colspan="3">Network and software</th></tr>
+          <tr><th>Interconnect</th><td>LingQi; dual-plane, four-rail fat tree</td><td>HPE Slingshot 400</td></tr>
+          <tr><th>Operating system</th><td>Kylin OS</td><td>HPE Cray OS</td></tr>
+          <tr><th>MPI</th><td>OpenMPI, customized for LingQi</td><td>HPE Cray MPICH</td></tr>
         </tbody>
       </table>
 
-      <p class="source"><sup>†</sup> Derived from the listed figures: Rmax ÷ Rpeak, Rmax ÷ power, and total cores ÷ 304.<br>
-      Source: <a href="https://top500.org/lists/top500/list/2026/11/" target="_blank" rel="noopener">TOP500 list, November 2026</a> and its <a href="https://top500.org/system/180490/" target="_blank" rel="noopener">system page</a>; node, memory, cabinet and network details from the <a href="https://www.newswise.com/articles/no-1-on-top500-and-hpcg-lineshine-supercomputer-introduces-a-new-architecture-for-hpc-ai-converged-scientific-computing" target="_blank" rel="noopener">NSCS press release</a>.</p>
+      <p class="source"><sup>†</sup> Derived from the listed figures: Rmax ÷ Rpeak, Rmax ÷ power, and the ratios between the two systems.<br>
+      Source: <a href="https://top500.org/lists/top500/list/2026/11/" target="_blank" rel="noopener">TOP500 list, November 2026</a> and the system pages for <a href="https://top500.org/system/180490/" target="_blank" rel="noopener">LineShine</a> and <a href="https://top500.org/system/180515/" target="_blank" rel="noopener">HANGANG</a>. LineShine node and memory details from the <a href="https://www.newswise.com/articles/no-1-on-top500-and-hpcg-lineshine-supercomputer-introduces-a-new-architecture-for-hpc-ai-converged-scientific-computing" target="_blank" rel="noopener">NSCS press release</a>; HANGANG GPU count from the government announcement as reported by <a href="https://www.koreatimes.co.kr/amp/business/tech-science/20261102/korea-unveils-276-mil-hangang-supercomputer" target="_blank" rel="noopener">The Korea Times</a>.</p>
     </article>
 
     <article class="post" data-tags="conferences">
