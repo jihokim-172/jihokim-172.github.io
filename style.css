@@ -276,6 +276,17 @@ p { margin: 0 0 14px; }
 .takeaways { margin: 18px 0 0; padding-left: 20px; font-size: 0.97rem; }
 .takeaways li { margin-bottom: 9px; }
 .source { font-size: 0.85rem; color: var(--muted); margin-top: 28px; }
+.post header + p { margin-top: 16px; }
+.spec { width: 100%; border-collapse: collapse; font-size: 0.95rem; margin-top: 20px; }
+.spec th, .spec td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.spec th { width: 34%; color: var(--muted); font-weight: 500; }
+.spec td b { font-weight: 700; }
+.spec .group th {
+  width: auto; padding: 22px 12px 8px; border-bottom: 2px solid var(--line);
+  font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent);
+}
+.spec tr.group:first-child th { padding-top: 6px; }
+.spec sup { color: var(--muted); }
 
 /* ---------- footer ---------- */
 footer {
@@ -297,5 +308,7 @@ footer {
   .venue { width: fit-content; }
   .panels { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .panels.trio { grid-template-columns: 1fr; }
+  .spec th, .spec td { padding: 8px 6px; }
+  .spec th { width: 40%; }
   nav { gap: 16px; flex-wrap: wrap; }
 }

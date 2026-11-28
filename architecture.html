@@ -36,6 +36,52 @@
       글 추가 방법: 아래 article 블록을 복사해 맨 위에 붙이고 data-tags 에 주제를 적는다 (여러 개면 공백으로 구분).
       새 주제가 생기면 위 filters 에 같은 data-filter 값의 버튼을 하나 추가한다.
     -->
+    <article class="post" data-tags="supercomputer">
+      <header>
+        <h2 class="post-title">LineShine, No. 1 on the TOP500</h2>
+        <p class="post-meta">Nov. 28, 2026 · <span class="tag">Supercomputer</span></p>
+      </header>
+
+      <p>LineShine has led the TOP500 since June 2026 and kept the top spot on the November 2026 list announced at SC26. It is the first system to pass 2 EFlop/s on HPL, and it does so with CPUs only.</p>
+
+      <table class="spec">
+        <tbody>
+          <tr class="group"><th colspan="2">System</th></tr>
+          <tr><th>Name</th><td>LineShine (灵晟)</td></tr>
+          <tr><th>Site</th><td>National Supercomputing Centre in Shenzhen (NSCS), China</td></tr>
+          <tr><th>Manufacturer</th><td>Shenzhen Cloud Computing Center</td></tr>
+          <tr><th>Installation year</th><td>2025</td></tr>
+          <tr><th>TOP500 rank</th><td>No. 1 (June 2026, November 2026)</td></tr>
+
+          <tr class="group"><th colspan="2">Performance</th></tr>
+          <tr><th>HPL (Rmax)</th><td><b>2,198.40 PFlop/s</b></td></tr>
+          <tr><th>Theoretical peak (Rpeak)</th><td>2,735.82 PFlop/s</td></tr>
+          <tr><th>Rmax / Rpeak</th><td>80.4%<sup>†</sup></td></tr>
+          <tr><th>HPCG</th><td>22.00 PFlop/s (No. 1 on HPCG)</td></tr>
+          <tr><th>Power</th><td>42,220 kW</td></tr>
+          <tr><th>Energy efficiency</th><td>52.07 GFlops/W<sup>†</sup></td></tr>
+
+          <tr class="group"><th colspan="2">Compute</th></tr>
+          <tr><th>Processor</th><td>LX2, 304 cores, 1.55 GHz; chiplet-based, with an SVE vector engine and an SME matrix engine per core</td></tr>
+          <tr><th>Accelerator</th><td>None (CPU-only)</td></tr>
+          <tr><th>Total cores</th><td>13,789,440</td></tr>
+          <tr><th>CPUs</th><td>45,360<sup>†</sup></td></tr>
+          <tr><th>Compute nodes</th><td>22,680 (2 CPUs per node)</td></tr>
+          <tr><th>Memory per node</th><td>64 GB HBM + 512 GB DDR5</td></tr>
+          <tr><th>Cabinets</th><td>About 90 compute cabinets</td></tr>
+
+          <tr class="group"><th colspan="2">Network and software</th></tr>
+          <tr><th>Interconnect</th><td>LingQi; dual-plane, four-rail fat tree; 8 network interfaces per node</td></tr>
+          <tr><th>Operating system</th><td>Kylin OS</td></tr>
+          <tr><th>Compiler</th><td>Lclang 1.0.0</td></tr>
+          <tr><th>MPI</th><td>OpenMPI, customized for LingQi</td></tr>
+        </tbody>
+      </table>
+
+      <p class="source"><sup>†</sup> Derived from the listed figures: Rmax ÷ Rpeak, Rmax ÷ power, and total cores ÷ 304.<br>
+      Source: <a href="https://top500.org/lists/top500/list/2026/11/" target="_blank" rel="noopener">TOP500 list, November 2026</a> and its <a href="https://top500.org/system/180490/" target="_blank" rel="noopener">system page</a>; node, memory, cabinet and network details from the <a href="https://www.newswise.com/articles/no-1-on-top500-and-hpcg-lineshine-supercomputer-introduces-a-new-architecture-for-hpc-ai-converged-scientific-computing" target="_blank" rel="noopener">NSCS press release</a>.</p>
+    </article>
+
     <article class="post" data-tags="conferences">
       <header>
         <h2 class="post-title">ISCA, MICRO, HPCA papers, 2008–2026</h2>
